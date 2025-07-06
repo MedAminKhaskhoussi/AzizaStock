@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    tools:context=".CustumBaseAdapter"
+    android:background="@drawable/img_6">
+
+    <ImageView
+        android:id="@+id/imageicon"
+        android:layout_width="150dp"
+        android:layout_height="131dp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="131dp"
+        >
+
+        <TextView
+            android:id="@+id/textviewlist"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="left"
+            android:text="My text"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toTopOf="@+id/textViewPrix"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textViewPrix"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:fontFamily="@font/architects_daughter"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textviewlist" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
